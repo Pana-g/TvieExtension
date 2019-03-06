@@ -1,0 +1,42 @@
+{
+  "name": "VieConnect Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension was created by the awesome team of VieConnect!",
+  "homepage_url": "https://vieconnect.io/",
+  "icons": {
+    "16": "icons/viecon16.png",
+    "48": "icons/viecon48.png",
+    "128": "icons/viecon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "page_action": {
+    "default_icon": "icons/viecon19.png",
+    "default_title": "VieConnect Extension",
+    "default_popup": "src/page_action/page_action.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.vieconnect.io/seniors"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://s3.eu-west-1.amazonaws.com/app.vieconnect.io-uploads/public/tutorials/*"
+      ],
+      "js": [
+        "src/inject/inject1.js"
+      ]
+    }
+  ]
+}
