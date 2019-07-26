@@ -7,7 +7,7 @@ chrome.extension.sendMessage({}, function (response) {
 			console.info("Button listener started.");
 			function timerFunc() {
 				if (document.URL.endsWith('seniors')) {
-					var btn = document.getElementsByClassName("sc-btzYZH eNLDNg");
+					var btn = document.getElementsByClassName("sc-kTUwUJ irvPHR");
 					if (btn.length > 0) {
 						btn[0].click()
 					}
@@ -27,23 +27,23 @@ chrome.extension.sendMessage({}, function (response) {
 						}
 
 
-						var title1 = document.getElementsByClassName('sc-chPdSV hDnWVj');
-						var title2 = document.getElementsByClassName('sc-ckVGcZ hzRRwn');
-						var outterPane = document.getElementsByClassName('sc-cvbbAY bgZPFQ ant-layout-content');
-						var extra = document.getElementsByClassName('sc-cMljjf bqDeCs');
-						var seniorPane = document.getElementsByClassName('sc-brqgnP lnccvB');
-						var headerLabel = document.getElementsByClassName('hxaRQP');
-						var headerPane = document.getElementsByClassName('sc-jAaTju hnctjN');
+						var title1 = document.getElementsByClassName('sc-kgoBCf jPyRPl');
+						var title2 = document.getElementsByClassName('sc-jKJlTe fZxXev');
+						var outterPane = document.getElementsByClassName('sc-brqgnP fSAimE ant-layout-content');
+						var extra = document.getElementsByClassName('sc-jDwBTQ iPrvAS');
+						var seniorPane = document.getElementsByClassName('sc-jAaTju kooLeZ');
+						var headerLabel = document.getElementsByClassName('sc-jlyJG dpsmMD sc-kGXeez gfkNyK');4
+						var headerPane = document.getElementsByClassName('sc-gPEVay iGfVVq');
 						var infoLabel = document.getElementsByClassName('sc-ksYbfQ fWpUxf'), i;
 						var noSensor = document.getElementsByClassName('sc-kvZOFW icUrjg'), j;
 						var insideInfoPane = document.getElementsByClassName('sc-kjoXOD duydLr');
-						var innerInfo = document.getElementsByClassName('sc-hmzhuo dFCRGd');
+						var innerInfo = document.getElementsByClassName('sc-kjoXOD duydLr');
 						var infoInsidePane = document.getElementsByClassName('sc-ksYbfQ hgFlvp');
-						var headerLabelForEve = document.getElementsByClassName('sc-jAaTju hRMFNb');
+						var headerLabelForEve = document.getElementsByClassName('sc-gPEVay gKpXnM');
 						var enableButton = document.getElementsByClassName('ant-btn sc-bdVaJa HWvmN ant-btn-default');
 
-						var nameLabel = document.getElementsByClassName('sc-iRbamj ilgZqM');
-						var roomLabel = document.getElementsByClassName('sc-jlyJG dJXfhW');
+						var nameLabel = document.getElementsByClassName('sc-gipzik egrDRp');
+						var roomLabel = document.getElementsByClassName('sc-csuQGl hACABO');
 
 						if (title1[0] != undefined) {
 							title1[0].style.fontSize = '1.875rem';
@@ -71,7 +71,7 @@ chrome.extension.sendMessage({}, function (response) {
 							nameLabel[i].style.fontWeight = 'bold';
 							nameLabel[i].style.fontSize = '1.6875rem';
 							roomLabel[i].style.fontSize = '1.125rem';
-
+							
 							seniorPane[i].style.fontSize = seniorPane[i].style.fontSize + 20;
 							seniorPane[i].style.display = 'flex';
 							seniorPane[i].style.flexDirection = 'row';
